@@ -18,7 +18,7 @@ def calculate_ground_shipping_cost(weight):
   
 # Define the function drone_shipping_cost
 
-def drone_shipping_cost(weight):
+def calculate_drone_shipping_cost(weight):
     """
     Calculate the cost of drone shipping
     based on the package's weight.
