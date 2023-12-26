@@ -53,8 +53,17 @@ def find_cheapest_shipping_method(weight):
     else:
         return f"The cheapest method is Drone Shipping and it will cost $ {drone_shipping_cost}"
 
-# Define the weight
-weight = 14.5
+# Start an infinite loop to keep the program running until the user decides to quit
+while True:
+    # Get the weight from the user
+    weight = float(input("Please enter the weight of the package: "))
 
-# Print the cheapest shipping method
-print(find_cheapest_shipping_method(weight))
+    # Print the cheapest shipping method
+    print(find_cheapest_shipping_method(weight))
+    
+    # Ask the user if they want to calculate shipping for another package
+    calculate_again = input("Do you want to calculate shipping for another package? (yes/no): ")
+    
+    # If the user doesn't want to calculate again, break the loop
+    if calculate_again.lower() != "yes":
+        break
