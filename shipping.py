@@ -1,4 +1,4 @@
-# Define the function calculate_ground_shipping_cost
+# Define the function calculate_ground_shipping_cost 🚚
 
 def calculate_ground_shipping_cost(weight):
     """
@@ -16,7 +16,7 @@ def calculate_ground_shipping_cost(weight):
         price_per_pound = 1.50
     return round((weight*price_per_pound) + flat_charge, 2)
   
-# Define the function drone_shipping_cost
+# Define the function drone_shipping_cost 🚀
 
 def calculate_drone_shipping_cost(weight):
     """
@@ -34,7 +34,7 @@ def calculate_drone_shipping_cost(weight):
         price_per_pound = 4.50
     return round((weight*price_per_pound) + flat_charge, 2)
 
-# Define the function find_cheapest_shipping_method
+# Define the function find_cheapest_shipping_method 🔎
 
 def find_cheapest_shipping_method(weight):
     """
@@ -53,7 +53,7 @@ def find_cheapest_shipping_method(weight):
     else:
         return f"The cheapest method is Drone Shipping and it will cost $ {drone_shipping_cost}"
 
-# Start an infinite loop to keep the program running until the user decides to quit
+# Start an infinite loop to keep the program running until the user decides to quit ➰
 while True:
     # Get the weight from the user
     weight = float(input("Please enter the weight of the package: "))
