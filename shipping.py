@@ -52,4 +52,9 @@ def find_cheapest_shipping_method(weight):
         return f"The cheapest method is Ground Shipping Premium and it will cost $ {ground_shipping_premium_cost}"
     else:
         return f"The cheapest method is Drone Shipping and it will cost $ {drone_shipping_cost}"
-    
+
+# Define the weight
+weight = 14.5
+
+# Print the cheapest shipping method
+print(find_cheapest_shipping_method(weight))
